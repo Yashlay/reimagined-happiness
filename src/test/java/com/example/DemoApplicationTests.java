@@ -39,14 +39,14 @@ public class DemoApplicationTests {
 
     @Test
     public void get_all_customers() throws Exception{
-        List<Customer> customers = Arrays.asList(new Customer("1","ABC","DEF"));
+        List<Customer> customers = Arrays.asList(new Customer("2","ABC3","DEF"));
         //when(customerController.getAllCustomers()).thenReturn(customers);
         when(customerrepository.findAll()).thenReturn(customers);
 
 
         mockmvc.perform(get("/customers")).andExpect(status().isOk()).andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
                 .andExpect(jsonPath("$", hasSize(1)))
-        .andExpect(jsonPath("$[0].id", is("1")));
+        .andExpect(jsonPath("$[0].id", is("2    ")));
     }
 
 
