@@ -47,7 +47,8 @@ public class DemoApplicationTests {
         mockmvc.perform(get("/customers")).andExpect(status().isOk()).andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
                 .andExpect(jsonPath("$", hasSize(1)))
         .andExpect(jsonPath("$[0].id", is("2")))
-        .andExpect(jsonPath("$[0].firstname", is("ABC3")));
+        .andExpect(jsonPath("$[0].firstname", is("ABC3")))
+        .andExpect(jsonPath("$[0].lastname", is("DEF")));
     }
 
 
