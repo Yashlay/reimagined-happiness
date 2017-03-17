@@ -13,7 +13,15 @@ public class Customer {
     @Id
     @ApiModelProperty("Id of the customer")
     private String id;
+
+    public String getContacts() {
+        return contacts;
+    }
+
+   
+
     @ApiModelProperty("First Name of the customer")
+
     private String firstname;
     @ApiModelProperty("Last Name of the customer")
     private String lastname;
