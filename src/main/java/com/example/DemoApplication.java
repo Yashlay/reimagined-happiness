@@ -27,6 +27,10 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
+	
+	
+	
+	
 //    @Bean
 //    HealthIndicator healthIndicator(){
 //        return ()-> Health.status("I am ").build();
