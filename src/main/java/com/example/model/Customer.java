@@ -18,7 +18,9 @@ public class Customer {
         return contacts;
     }
 
-   
+    public void setContacts(String contacts) {
+        this.contacts = contacts;
+    }
 
     @ApiModelProperty("First Name of the customer")
 
