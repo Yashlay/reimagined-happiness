@@ -17,6 +17,7 @@ public class Customer {
     private String firstname;
     @ApiModelProperty("Last Name of the customer")
     private String lastname;
+	@ApiModelProperty("Contacts of the customer")
 	private String contacts;
 
     public Customer() {
