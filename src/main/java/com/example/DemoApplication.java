@@ -21,7 +21,7 @@ package com.example;
 @EnableSwagger2
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
-
+//@EnableAutoConfiguration
 @RestController
 public class DemoApplication {
     public static void main(String[] args) {

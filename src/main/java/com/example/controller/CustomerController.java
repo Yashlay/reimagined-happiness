@@ -50,6 +50,7 @@ public class CustomerController {
 
     @RequestMapping("/customers/{firstname}")
     private Customer getOneCustomer(@PathVariable String firstname){
+
         return customerRepositury.findByFirstname(firstname);
     }
 
