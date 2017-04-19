@@ -40,7 +40,7 @@ public class CustomerController {
             @ApiResponse(code = 200, message = "Successful retrieval",
                     response = Customer.class, responseContainer = "List") })
 
-    @RequestMapping(value="/customers",method =RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value="/customers",method =RequestMethod.GET,produces= MediaType.APPLICATION_JSON_VALUE)
 
     public List<Customer> getAllCustomers(){
         return customerRepositury.findAll();
